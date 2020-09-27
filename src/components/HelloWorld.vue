@@ -27,14 +27,25 @@
       <li><a href="https://vue-loader.vuejs.org" target="_blank" rel="noopener">vue-loader</a></li>
       <li><a href="https://github.com/vuejs/awesome-vue" target="_blank" rel="noopener">awesome-vue</a></li>
     </ul>
+    <button @click="handleEmit">click</button>
   </div>
 </template>
 
 <script>
 export default {
   name: 'HelloWorld',
+  data(){
+    return{
+      msg1:'子组件'
+    }
+  },
   props: {
     msg: String
+  },
+  methods:{
+    handleEmit(){
+      this.$emit('my-event',this.msg1)
+    }
   }
 }
 </script>
