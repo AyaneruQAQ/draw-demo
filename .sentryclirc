@@ -1,0 +1,7 @@
+[defaults]
+url='https://sentry.io/'
+org='personal-iem'
+project='personal-iem'
+
+[auth]
+token='09e7ad09fd1949b8a6fc567f92698bfb6b67de4c94124d8aa35044001deafca9'
